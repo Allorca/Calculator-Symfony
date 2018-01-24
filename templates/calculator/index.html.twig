@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}Calculator Index{% endblock %}
+{% block body %}
+    <ul>
+        <li><a href="{{ path('app_form_sumnumber') }}">Sum</a></li>
+        <li><a href="{{ path('app_form_subnumber') }}">Subtract</a></li>
+        <li><a href="{{ path('app_form_multinumber') }}">Multiply</a></li>
+        <li><a href="{{ path('app_form_divnumber') }}">Division</a></li>
+    </ul>
+{% endblock %}

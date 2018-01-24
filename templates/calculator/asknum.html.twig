@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Calculator Form{% endblock %}
+
+{% block body %}
+    <h2>Enter the numbers:</h2>
+    <form method="post" action="{{ action }}">
+        <input type="number" name="number1"/>
+        <input type="number" name="number2"/>
+        <input type="submit" value="Send">
+    </form>
+{% endblock %}

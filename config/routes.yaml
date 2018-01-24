@@ -1,0 +1,43 @@
+#index:
+#    path: /
+#    defaults: { _controller: 'App\Controller\DefaultController::index' }
+
+app_lucky_number: #Nombre de la ruta para hacer referencia a ella desde cualquier sitio.
+  path: /lucky/number #La URL que muestra el navegador.
+  controller: App\Controller\LuckyController::number #A qué fichero y qué método llamará la URL.
+
+app_index_calculator:
+  path: /calculator/index
+  controller: App\Controller\IndexController::indexAction
+
+app_result_sumnumber:
+  path: /calculator/sumresult
+  controller: App\Controller\CalculatorController::doSumAction
+
+app_form_sumnumber:
+  path: /calculator/sumform
+  controller: App\Controller\CalculatorController::sumAction
+
+app_result_subnumber:
+  path: /calculator/subresult
+  controller: App\Controller\CalculatorController::doSubAction
+
+app_form_subnumber:
+  path: /calculator/subform
+  controller: App\Controller\CalculatorController::subAction
+
+app_result_multinumber:
+  path: /calculator/multresult
+  controller: App\Controller\CalculatorController::doMultiAction
+
+app_form_multinumber:
+  path: /calculator/multiform
+  controller: App\Controller\CalculatorController::multiAction
+
+app_result_divnumber:
+  path: /calculator/divresult
+  controller: App\Controller\CalculatorController::doDivAction
+
+app_form_divnumber:
+  path: /calculator/divform
+  controller: App\Controller\CalculatorController::divAction

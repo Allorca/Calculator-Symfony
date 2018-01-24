@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+{% block title %}Calculator Result{% endblock %}
+
+{% block body %}
+    <h2>The result is</h2>
+    <h1>{{ result }}</h1>
+    <li><a href="{{ path('app_index_calculator') }}">Volver al índice</a></li>
+{% endblock %}
