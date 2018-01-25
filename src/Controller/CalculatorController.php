@@ -21,10 +21,8 @@ class CalculatorController extends Controller
         $action = $this->generateUrl('app_result_sumnumber');
         return $this->render('calculator/asknum.html.twig', ['action' => $action]);
     }
-    public function doSumAction(Request $request, CalculatorService $calculatorService) //Llamar al servicio de calculadora
-                                                                                        //desde cualquier lado.
+    public function doSumAction(Request $request)
     {
-
         $num1=$request->request->get('number1');
         $num2=$request->request->get('number2');
 
@@ -32,7 +30,6 @@ class CalculatorController extends Controller
         $model->sum();
         $result = $model->getResult();
 
-        $calculatorService = $this->getOp1; //¡FUNCIONA!
         return $this->render('calculator/resultado.html.twig',
             ['result' => $result]
         );
